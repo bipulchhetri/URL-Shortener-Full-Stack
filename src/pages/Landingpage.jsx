@@ -17,7 +17,7 @@ const Landingpage = () => {
     if(longUrl) navigate(`/auth?createNew=${longUrl}`);
   }
   return (
-    <div className="flex flex-col justify-center items-center ml-20">
+    <div className="flex flex-col justify-center items-center">
       <h2 className=" sm:my-16 text-3xl sm:text-6xl lg:text-7xl text-white text-center font-extrabold">
         Shrink, Share, Simplify
         <br />
