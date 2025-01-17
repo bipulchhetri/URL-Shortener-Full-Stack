@@ -17,7 +17,7 @@ const Landingpage = () => {
     if(longUrl) navigate(`/auth?createNew=${longUrl}`);
   }
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col justify-center items-center ml-20">
       <h2 className=" sm:my-16 text-3xl sm:text-6xl lg:text-7xl text-white text-center font-extrabold">
         Shrink, Share, Simplify
         <br />
@@ -35,11 +35,11 @@ const Landingpage = () => {
           value={longUrl}
           placeholder="Enter your long URL"
           onChange={(e)=>setLongUrl(e.target.value)}
-          className="h-full flex-1 py-4 px-4 border-green"
+          className="h-full flex-1 py-4 px-4 border-blue-500"
         />
         <Button 
         
-        className="h-full" type="submit" variant="destructive">
+        className="h-full bg-blue-600 hover:bg-gray-700 text-white" type="submit" >
           SHORT URL
         </Button>
       </form>
