@@ -83,7 +83,7 @@ const Header = () => {
           {/* <img src="/logo.png" className="h-40 w-[400px]" alt="Trimrr Logo" /> */}
           <p className="text-[40px] m-10 font-bold" >SHOR<span className= "text-blue-600">TIFY</span></p>
         </Link>
-        <div className="flex gap-4">
+        <div className="flex">
           {!user ? (
             <Button onClick={() => navigate("/auth")}>Login</Button>
           ) : (
